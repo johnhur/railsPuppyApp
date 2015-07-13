@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'puppies#index'
+  get '/about', to: 'pages#about'
+  get '/contact', to: 'pages#contact'
   resources :puppies
 
   #     Prefix Verb   URI Pattern                 Controller#Action
