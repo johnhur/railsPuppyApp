@@ -1,4 +1,25 @@
 Rails.application.routes.draw do
+  root 'puppies#index'
+  resources :puppies
+
+  #     Prefix Verb   URI Pattern                 Controller#Action
+  #       root GET    /                           puppies#index
+  #    puppies GET    /puppies(.:format)          puppies#index
+  #            POST   /puppies(.:format)          puppies#create
+  #  new_puppy GET    /puppies/new(.:format)      puppies#new
+  # edit_puppy GET    /puppies/:id/edit(.:format) puppies#edit
+  #      puppy GET    /puppies/:id(.:format)      puppies#show
+  #            PATCH  /puppies/:id(.:format)      puppies#update
+  #            PUT    /puppies/:id(.:format)      puppies#update
+  #            DELETE /puppies/:id(.:format)      puppies#destroy
+  # get 'puppies/index'
+
+  # get 'puppies/new'
+
+  # get 'puppies/show'
+
+  # get 'puppies/edit'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
